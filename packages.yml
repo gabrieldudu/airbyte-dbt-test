@@ -1,5 +1,5 @@
 # add dependencies. these will get pulled during the `dbt deps` process.
 
 packages:
-  - git: "https://github.com/fishtown-analytics/dbt-utils.git"
-    revision: 0.6.4
+  - git: dbt-labs/dbt_utils
+    revision: 1.1.0
