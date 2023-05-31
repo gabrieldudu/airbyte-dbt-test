@@ -12,11 +12,14 @@ profile: 'normalize'
 # These configurations specify where dbt should look for different types of files.
 # The `source-paths` config, for example, states that source models can be found
 # in the "models/" directory. You probably won't need to change these!
-source-paths: ["models"]
+model-paths: [models]
+seed-paths: [data]
+
+#source-paths: ["models"]
 docs-paths: ["docs"]
 analysis-paths: ["analysis"]
 test-paths: ["tests"]
-data-paths: ["data"]
+#data-paths: ["data"]
 macro-paths: ["macros"]
 
 target-path: "../build"  # directory which will store compiled SQL files
