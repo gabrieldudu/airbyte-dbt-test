@@ -60,3 +60,5 @@ models:
 
 vars:
   dbt_utils_dispatch_list: ['airbyte_utils']
+  surrogate_key_treat_nulls_as_empty_strings: true #turn on legacy behavior
+  
