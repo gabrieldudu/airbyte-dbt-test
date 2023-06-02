@@ -2,7 +2,7 @@
 -- SQL model to build a hash column based on the values of this record
 select
     *,
-    {{ dbt_utils.surrogate_key([
+    {{ dbt_utils.generate_surrogate_key([
         '_airbyte_poke_pokemon_hashid',
         'item',
         array_to_string('version_details'),

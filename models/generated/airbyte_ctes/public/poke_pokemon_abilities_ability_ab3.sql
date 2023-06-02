@@ -2,7 +2,7 @@
 -- SQL model to build a hash column based on the values of this record
 select
     *,
-    {{ dbt_utils.surrogate_key([
+    {{ dbt_utils.generate_surrogate_key([
         '_airbyte_abilities_hashid',
         'url',
         adapter.quote('name'),
