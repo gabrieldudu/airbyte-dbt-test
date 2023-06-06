@@ -11,6 +11,7 @@
   {{ adapter.dispatch('concat', packages = ['airbyte_utils', 'dbt_utils'])(fields) }}
 {%- endmacro %}
 
-{% macro postgres__concat(fields) %}
+
+/* {% macro postgres__concat(fields) %}
     {{ dbt_utils.alternative_concat(fields) }}
-{% endmacro %}
+{% endmacro %} */
