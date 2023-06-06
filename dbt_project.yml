@@ -15,7 +15,7 @@ profile: 'normalize'
 
 # model-paths
 # Optionally specify a custom list of directories where models and sources are located.
-model-paths: [transformations]
+model-paths: [models]
 
 # Optionally specify a custom list of directories where seed files are located.
 seed-paths: [../data]
@@ -27,8 +27,8 @@ test-paths: ["tests"]
 #data-paths: ["data"]
 macro-paths: ["macros"]
 
-target-path: "../compiled"  # directory which will store compiled SQL files
-log-path: "../logs"  # directory which will store DBT logs
+target-path: "../../build"  # directory which will store compiled SQL files
+log-path: "../../logs"  # directory which will store DBT logs
 packages-install-path: "dbt_modules"
 #modules-path: "../dbt_modules"  # directory which will store external DBT dependencies
 
